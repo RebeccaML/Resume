@@ -1,6 +1,7 @@
 /* Main style for resume site
  * Colors: #ECF8F5 (pale turquoise)
  *         #84C4B4 (darker turquoise)
+ *         #EAE4F9 (pale purple)
  *         #2F156C (dark purple) */
 html, body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -20,13 +21,14 @@ body {
 }
 
 header {
-    align-items: center;
     background-color: #2F156C;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
+    padding: 2px;
+}
+
+nav {
+    background-color: #EAE4F9;
+    padding: 5px;
+    font-size: 1.2em;
 }
 
 main {
@@ -35,14 +37,28 @@ main {
     margin: auto;
 }
 
+footer {
+    background-color: #2F156C;
+    color: #EAE4F9;
+    flex-shrink: 0;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
 h1 {
-    color: #ECF8F5;
-    flex: 1 0 600px;
-    padding-left: 20px;
+    color: #EAE4F9;
+    font-size: 2.1em;
 }
 
 h2 {
     color: #2F156C;
+}
+
+a {
+    color: #2F156C;
+    text-decoration: none;
+    padding: 0 10px 0 10px;
 }
 
 hr {
@@ -52,18 +68,3 @@ hr {
     width: 35%;
 }
 
-img {
-    border-radius: 50%;
-    flex: 0 1 150px;
-    max-width: 125px;
-    padding: 10px;
-}
-
-footer {
-    background-color: #2F156C;
-    color: #ECF8F5;
-    flex-shrink: 0;
-    padding: 10px;
-    text-align: center;
-    width: 100%;
-}
