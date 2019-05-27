@@ -4,7 +4,7 @@
  *         #EAE4F9 (pale purple)
  *         #2F156C (dark purple) */
 html, body {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Raleway, serif;
     font-size: 17px;
     height: 100%;
     margin: 0;
@@ -22,13 +22,25 @@ body {
 
 header {
     background-color: #2F156C;
-    padding: 2px;
+    padding: 1px;
 }
 
 nav {
     background-color: #EAE4F9;
-    padding: 5px;
+    text-align: right;
+}
+
+nav a {
+    color: #2F156C;
+    display: inline-block;
     font-size: 1.2em;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #84C4B4;
+    color: #2F156C;
 }
 
 main {
@@ -39,16 +51,18 @@ main {
 
 footer {
     background-color: #2F156C;
-    color: #EAE4F9;
+    color: #ECF8F5;
     flex-shrink: 0;
+    font-size: 1.1em;
     padding: 10px;
     text-align: center;
     width: 100%;
 }
 
 h1 {
-    color: #EAE4F9;
+    color: #ECF8F5;
     font-size: 2.1em;
+    padding-left: 20px;
 }
 
 h2 {
@@ -57,8 +71,18 @@ h2 {
 
 a {
     color: #2F156C;
+}
+
+a:visited {
+    color: #2F156C;
+}
+
+a:hover {
     text-decoration: none;
-    padding: 0 10px 0 10px;
+}
+
+p, li {
+    line-height: 125%;
 }
 
 hr {
@@ -66,5 +90,9 @@ hr {
     border: none;
     height: 2px;
     width: 35%;
+}
+
+table td {
+    padding: 2px 15px;
 }
 
