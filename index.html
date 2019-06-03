@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Rebecca's Personal Site</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway&display=swap">
     <link rel="icon" href="images/favicon.ico">
@@ -31,11 +32,13 @@
                 <li><strong>Loftus TAFE, Loftus: </strong> Diploma of Website Development</li>
             </ul>
             <p>I have also taken many online courses related to programming and website development.
-                These are not official but if you'd like to view them you can expand the list below.
+                These are not official but if you'd like to view them you can <button class="expand">expand</button> the
+                list below.
             </p>
-            <ul>
-                <li><strong>Georgie Tech via edX:</strong> Computing in Python I: Fundamentals and Procedural Programming</li>
-                <li><strong>Georgie Tech via edX:</strong> Computing in Python II: Control Structures</li>
+            <ul class="online-courses hide">
+                <li><strong>Georgia Tech via edX:</strong> Computing in Python I: Fundamentals and Procedural
+                    Programming</li>
+                <li><strong>Georgia Tech via edX:</strong> Computing in Python II: Control Structures</li>
                 <li><strong>FreeCodeCamp:</strong> Responsive Web Design</li>
             </ul>
             <hr>
@@ -110,12 +113,23 @@
             <hr>
             <h2>Portfolio</h2>
             <p>You can find examples of programs and websites I have made by looking at my <a
-                href="https://github.com/RebeccaML">Github repositories</a></p>
+                    href="https://github.com/RebeccaML">Github repositories</a></p>
         </main>
     </div>
     <footer>
         © 2019 Rebecca Lowe
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
