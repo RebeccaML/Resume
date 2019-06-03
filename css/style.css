@@ -115,6 +115,7 @@ table td {
     border-radius: 15px;
     font-weight: bold;
     text-decoration: underline;
+    font-size: 1em;
 }
 .expand:hover {
     cursor: pointer;
