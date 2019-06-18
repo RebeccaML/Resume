@@ -3,129 +3,144 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Rebecca's Personal Site</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway&display=swap">
     <link rel="icon" href="images/favicon.ico">
 </head>
 
 <body>
-    <div id="container">
+    <nav class="navbar fixed-top">
         <header>
-            <h1>Rebecca Lowe</h1>
+            <h1><a href="index.html" class="navbar-brand">Rebecca Lowe</a></h1>
         </header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="hobbies.html">My Hobbies</a>
-            <a href="contact.html">Contact Me</a>
-        </nav>
-        <main>
-            <p>I am a lifelong learner and hope to begin work as a software developer soon.
-                I'm particularly interested in game development and data science.
-            </p>
+        <ul class="nav justify-content-right">
+            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+            <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+            <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+            <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container-fluid">
+            <section id="about">
+                <h2>About Me</h2>
+                <p>I am a lifelong learner and hope to begin work as a software developer soon.
+                    I'm particularly interested in game development and data science.
+                </p>
+            </section>
             <hr>
-            <h2>Education</h2>
-            <ul>
-                <li><strong>University of Technology, Sydney:</strong> Bachelor of Science in Information Technology
-                </li>
-                <li><strong>Loftus TAFE, Loftus: </strong> Diploma of Website Development</li>
-            </ul>
-            <p>I have also taken many online courses related to programming and website development.
-                These are not official but if you'd like to view them you can <button class="expand">expand</button> the
-                list below.
-            </p>
-            <ul class="online-courses hide">
-                <li><strong>Georgia Tech via edX:</strong> Computing in Python I: Fundamentals and Procedural
-                    Programming</li>
-                <li><strong>Georgia Tech via edX:</strong> Computing in Python II: Control Structures</li>
-                <li><strong>Georgia Tech via edX:</strong> Computing in Python III: Data Structures</li>
-                <li><strong>FreeCodeCamp:</strong> Responsive Web Design</li>
-                <li><strong>Codecademy:</strong> Learn Python 3</li>
-            </ul>
+            <section id="education">
+                <h2>Education</h2>
+                <ul>
+                    <li><strong>University of Technology, Sydney:</strong> Bachelor of Science in Information Technology
+                    </li>
+                    <li><strong>Loftus TAFE, Loftus: </strong> Diploma of Website Development</li>
+                </ul>
+                <p>I have also taken many online courses related to programming and website development.
+                    These are not official but if you'd like to view them you can expand the
+                    list below.
+                </p>
+                <button class="btn view-more" type="button" data-toggle="collapse" data-target="#online-courses"
+                    aria-expanded="false" aria-controls="onlineCourses">View Online Courses</button>
+                <ul id="online-courses" class="collapse">
+                    <li><strong>Georgia Tech via edX:</strong> Computing in Python I: Fundamentals and Procedural
+                        Programming</li>
+                    <li><strong>Georgia Tech via edX:</strong> Computing in Python II: Control Structures</li>
+                    <li><strong>Georgia Tech via edX:</strong> Computing in Python III: Data Structures</li>
+                    <li><strong>FreeCodeCamp:</strong> Responsive Web Design</li>
+                    <li><strong>Codecademy:</strong> Learn Python 3</li>
+                </ul>
+            </section>
             <hr>
-            <h2>Technical Skills</h2>
-            <table class="skills">
-                <tr>
-                    <td>CSS3</td>
-                    <td>★★★★★</td>
-                </tr>
-                <tr>
-                    <td>HTML5</td>
-                    <td>★★★★★</td>
-                </tr>
-                <tr>
-                    <td>Python</td>
-                    <td>★★★</td>
-                </tr>
-                <tr>
-                    <td>Bootstrap</td>
-                    <td>★★</td>
-                </tr>
-                <tr>
-                    <td>Git</td>
-                    <td>★★</td>
-                </tr>
-                <tr>
-                    <td>JavaScript</td>
-                    <td>★★</td>
-                </tr>
-                <tr>
-                    <td>Java</td>
-                    <td>★</td>
-                </tr>
-                <tr>
-                    <td>NoSQL</td>
-                    <td>★</td>
-                </tr>
-                <tr>
-                    <td>SQL</td>
-                    <td>★</td>
-                </tr>
-            </table>
+            <section id="skills">
+                <h2>Technical Skills</h2>
+                <ul class="skills-list">
+                    <div class="row skills">
+                        <div class="col-md-5 skill-col">
+                            <li>CSS3<span class="stars">★★★★★</span></li>
+                            <li>HTML5<span class="stars">★★★★★</span></li>
+                            <li>Python<span class="stars">★★★</span></li>
+                            <li>Bootstrap<span class="stars">★★</span></li>
+                            <li>Git<span class="stars">★★</span></li>
+                        </div>
+                        <div class="col-md-5 skill-col">
+                            <li>JavaScript<span class="stars">★★</span></li>
+                            <li>Java<span class="stars">★</span></li>
+                            <li>NoSQL<span class="stars">★</span></li>
+                            <li>SQL<span class="stars">★</span></li>
+                        </div>
+                    </div>
+                </ul>
+            </section>
             <hr>
-            <h2>Work Experience</h2>
-            <table class="exp">
-                <thead>
-                    <tr>
-                        <th>Dates</th>
-                        <th>Position</th>
-                        <th>Employer</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>2012-2014</td>
-                        <td>Nightfill</td>
-                        <td>Coles Myer</td>
-                    </tr>
-                    <tr>
-                        <td>2009-2012</td>
-                        <td>Pamphlet Deliverer</td>
-                        <td>Salmat</td>
-                    </tr>
-                    <tr>
-                        <td>2007-2008</td>
-                        <td>Apprentice Beauty Therapist</td>
-                        <td>Beauty Café</td>
-                    </tr>
-                    <tr>
-                        <td>2006-2007</td>
-                        <td>Receptionist</td>
-                        <td>Green Valley Medical Practice</td>
-                    </tr>
-                </tbody>
-            </table>
+            <section id="experience">
+                <h2>Work Experience</h2>
+                <table class="exp table table-borderless">
+                    <thead>
+                        <tr>
+                            <th>Dates</th>
+                            <th>Position</th>
+                            <th>Employer</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2012-2014</td>
+                            <td>Nightfill</td>
+                            <td>Coles Myer</td>
+                        </tr>
+                        <tr>
+                            <td>2009-2012</td>
+                            <td>Pamphlet Deliverer</td>
+                            <td>Salmat</td>
+                        </tr>
+                        <tr>
+                            <td>2007-2008</td>
+                            <td>Apprentice Beauty Therapist</td>
+                            <td>Beauty Café</td>
+                        </tr>
+                        <tr>
+                            <td>2006-2007</td>
+                            <td>Receptionist</td>
+                            <td>Green Valley Medical Practice</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
             <hr>
-            <h2>Portfolio</h2>
-            <p>You can find examples of programs and websites I have made by looking at my <a
-                    href="https://github.com/RebeccaML">Github repositories</a></p>
-        </main>
-    </div>
-    <footer>
+            <section id="portfolio">
+                <h2>Portfolio</h2>
+                <p>You can find examples of programs and websites I have made by looking at my <a
+                        href="https://github.com/RebeccaML" target="_blank">Github repositories</a></p>
+            </section>
+            <hr>
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <p class="social-media">
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab fa-github-square"></i></a>
+                </p>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
         © 2019 Rebecca Lowe
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

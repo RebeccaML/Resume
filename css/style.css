@@ -1,146 +1,116 @@
 /* Main style for resume site
- * Colors: #ECF8F5 (pale turquoise)
- *         #84C4B4 (darker turquoise)
- *         #EAE4F9 (pale purple)
- *         #2F156C (dark purple) */
+ * Colors: #212121 (black)
+ *         #00BCD4 (cyan)
+ *         #D1C4E9 (pale purple)
+ *         #673AB7 (mid purple)
+ *         #512DA8 (dark purple) */
 html, body {
-    font-family: Raleway, serif;
-    font-size: 17px;
-    height: 100%;
-    margin: 0;
+    font-size: 18px;
+    color: #212121;
 }
-
-body {
-    background-color: #ECF8F5;
-    display: flex;
-    flex-direction: column;
-}
-
-#container {
-    flex: 1 0 auto;
-}
-
-header {
-    background-color: #2F156C;
-    padding: 1px;
-}
-
-nav {
-    background-color: #EAE4F9;
-    text-align: right;
-}
-
-nav a {
-    color: #2F156C;
-    display: inline-block;
-    font-size: 1.2em;
-    padding: 5px 10px 5px 10px;
-    text-decoration: none;
-}
-
-nav a:hover {
-    background-color: #2F156C;
-    color: #EAE4F9;
-}
-
 main {
-    padding: 20px;
-    width: 50%;
+    padding: 20px 30px;
+}
+.nav-link {
+    color: #D1C4E9;
+}
+.nav-link:hover {
+    color: #FFFFFF;
+}
+.navbar {
+    background-color: #673AB7;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #673AB7;
+    color: #D1C4E9;
+}
+h2 {
+    padding: 80px 0 10px 0;
+    text-align: center;
+    color: #512DA8;
+}
+.container-fluid {
+    width: 70%;
+}
+.navbar-brand {
+    font-size: 1.5rem;
+    color: #D1C4E9;
+}
+.navbar-brand:hover {
+    color: #FFFFFF;
+}
+ul {
+    list-style-type: none;
+}
+.skills-list li {
+    padding: 10px 0;
+}
+.stars {
+    float: right;
+}
+.skills {
+    width: 60%;
     margin: auto;
 }
+.skill-col {
+    padding: 0 50px;
+}
+.exp {
+    width: 70%;
+    margin: auto;
+}
+.exp thead {
+    text-align: center;
+}
+.view-more {
+    background-color: #673AB7;
+    color: #D1C4E9;
+    margin-bottom: 10px;
+}
+.view-more:hover {
+    background-color: #512DA8;
+    color: #FFFFFF;
+}
+hr {
+    border: none;
+    border-bottom: 2px solid #00BCD4;
+    width: 50%;
+    padding-top: 50px;
+}
+a {
+    color: #512DA8;
+}
+a:hover {
+    color: #673AB7;
+}
+.social-media {
+    text-align: center;
+    font-size: 3rem;
+}
+.social-media a {
+    padding: 0 10px;
+}
 
-@media (max-width: 800px) {
-    main {
+@media only screen and (max-width: 1100px) {
+    .container-fluid {
         width: 100%;
     }
-}
-
-footer {
-    background-color: #EAE4F9;
-    color: #2F156C;
-    flex-shrink: 0;
-    font-size: 1.1em;
-    font-weight: bold;
-    padding: 10px;
-    text-align: center;
-    width: 100%;
-}
-
-h1 {
-    color: #ECF8F5;
-    font-size: 2.1em;
-    padding-left: 20px;
-}
-
-h2, h3 {
-    color: #2F156C;
-}
-
-a {
-    color: #2F156C;
-    font-weight: bold;
-}
-
-a:visited {
-    color: #2F156C;
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-p, li {
-    line-height: 125%;
-}
-
-hr {
-    background-color: #84C4B4;
-    border: none;
-    height: 2px;
-    width: 35%;
-}
-
-table td {
-    padding: 2px 10px;
-}
-
-form {
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: center;
-}
-
-label {
-    grid-column: 1;
-    text-align: right;
-    padding: 5px;
-}
-
-textarea {
-    grid-column: 2;
-}
-
-.submit {
-    margin: 5px auto;
-    grid-column: 2;
-    width: 50%;
-}
-
-.hide {
-    display: none;
-}
-
-.expand {
-    background-color: #ECF8F5;
-    color: #2F156C;
-    border: none;
-    border-radius: 15px;
-    font-weight: bold;
-    text-decoration: underline;
-    font-size: 1em;
-}
-.expand:hover {
-    cursor: pointer;
-    text-decoration: none;
-    letter-spacing: 1px;
+    html, body {
+        font-size: 16px;
+        text-align: center;
+    }
+    main {
+        padding: 20px 10px;
+    }
+    .skills {
+        width: 100%;
+    }
+    .skill-col {
+        padding: 0 10px;
+    }
+    .exp {
+        width: 100%;
+    }
 }
