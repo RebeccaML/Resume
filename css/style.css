@@ -45,7 +45,7 @@ h3 a:hover {
     color: #512DA8;
 }
 .container-fluid {
-    width: 70%;
+    width: 65%;
 }
 .navbar-brand {
     font-size: 1.5rem;
@@ -76,6 +76,7 @@ ul {
 }
 .exp thead {
     text-align: center;
+    font-size: 1.1rem;
 }
 .view-more {
     background-color: #673AB7;
