@@ -31,6 +31,19 @@ h2 {
     text-align: center;
     color: #512DA8;
 }
+h3 {
+    color: #673AB7;
+}
+
+h3 a {
+    color: #673AB7;
+    text-decoration: underline;
+}
+
+h3 a:hover {
+    text-decoration: none;
+    color: #512DA8;
+}
 .container-fluid {
     width: 70%;
 }
@@ -79,10 +92,11 @@ hr {
     width: 50%;
     padding-top: 50px;
 }
-a {
+p a {
     color: #512DA8;
+    font-weight: bold;
 }
-a:hover {
+p a:hover {
     color: #673AB7;
 }
 .social-media {
