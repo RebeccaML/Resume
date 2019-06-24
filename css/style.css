@@ -45,7 +45,7 @@ h3 a:hover {
     color: #512DA8;
 }
 .container-fluid {
-    width: 65%;
+    width: 60%;
 }
 .navbar-brand {
     font-size: 1.5rem;
@@ -57,19 +57,6 @@ h3 a:hover {
 ul {
     list-style-type: none;
 }
-.skills-list li {
-    padding: 10px 0;
-}
-.stars {
-    float: right;
-}
-.skills {
-    width: 60%;
-    margin: auto;
-}
-.skill-col {
-    padding: 0 50px;
-}
 .exp {
     width: 70%;
     margin: auto;
@@ -77,6 +64,10 @@ ul {
 .exp thead {
     text-align: center;
     font-size: 1.1rem;
+}
+
+.skill {
+    font-weight: bold;
 }
 .view-more {
     background-color: #673AB7;
@@ -117,12 +108,6 @@ p a:hover {
     }
     main {
         padding: 20px 10px;
-    }
-    .skills {
-        width: 90%;
-    }
-    .skill-col {
-        padding: 0 10px;
     }
     .exp {
         width: 100%;
