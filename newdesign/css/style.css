@@ -1,0 +1,106 @@
+/* Main style for resume site
+ * Colors: 
+ *         
+ *         #E4E0E6 (light purple)
+ *         #46264D (mid purple)
+ *         #2B0734 (dark purple)
+ *         #1B0421 (darkest purple (gradients)) */
+
+ /* Base */
+
+html, body {
+    font-size: 18px;
+    background-color: #2B0734;
+    height: 100%;
+    color: #E4E0E6;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-fluid {
+    flex: 1 0 auto;
+    width: 60%;
+    margin: auto;
+    padding-top: 80px;
+}
+
+.fade-top {
+    position: fixed;
+    top: 80px;
+    height: 200px;
+    width: 100%;
+    background-image: linear-gradient(rgba(27, 4, 33, 1), rgba(27, 4, 33, 0));
+}
+
+.fade-bottom {
+    position: fixed;
+    bottom: 67px;
+    height: 200px;
+    width: 100%;
+    background-image: linear-gradient(rgba(27, 4, 33, 0), rgba(27, 4, 33, 1));
+}
+
+h1, h2, h3, h4 {
+    font-family: Raleway, sans-serif;
+}
+
+a {
+    color: #E4E0E6;
+}
+
+h2 {
+    padding-top: 110px;
+    text-align: center;
+}
+
+/* Navigation */
+
+nav {
+    background: #1B0421;
+}
+
+.nav-link {
+    color: #E4E0E6;
+    text-shadow: 3px 3px 7px #604567;
+    padding: 30px 30px 0 30px;
+    font-size: 1.2rem;
+    font-family: Raleway, sans-serif;
+}
+
+/* Contact */
+
+#contact {
+    padding-bottom: 110px;
+}
+
+#contact p {
+    margin-top: 20px;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+#contact a {
+    padding: 20px;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    flex-shrink: 0;
+    padding: 20px;
+    background: #1B0421;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1100px) {
+
+}
