@@ -15,9 +15,20 @@ html, body {
     color: #E4E0E6;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     display: flex;
     flex-direction: column;
+}
+
+hr {
+    border: none;
+    border-bottom: 5px dashed #E4E0E6;
+    margin-top: 150px;
+    width: 5%;
 }
 
 .container-fluid {
@@ -30,7 +41,7 @@ body {
 .fade-top {
     position: fixed;
     top: 80px;
-    height: 200px;
+    height: 150px;
     width: 100%;
     background-image: linear-gradient(rgba(27, 4, 33, 1), rgba(27, 4, 33, 0));
 }
@@ -38,7 +49,7 @@ body {
 .fade-bottom {
     position: fixed;
     bottom: 67px;
-    height: 200px;
+    height: 150px;
     width: 100%;
     background-image: linear-gradient(rgba(27, 4, 33, 0), rgba(27, 4, 33, 1));
 }
@@ -52,7 +63,7 @@ a {
 }
 
 h2 {
-    padding-top: 110px;
+    padding-top: 150px;
     text-align: center;
 }
 
@@ -70,10 +81,39 @@ nav {
     font-family: Raleway, sans-serif;
 }
 
+/* Skills */
+
+.view-more {
+    background-image: linear-gradient(#AFA2B3, #95839A);
+    font-family: Raleway, sans-serif;
+    color: #2B0734;
+    font-weight: bold;
+}
+
+.view-more:hover {
+    background-image: linear-gradient(#CAC1CC, #AFA2B3);
+    color: #2B0734;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus{
+    box-shadow: 0px 0px 3px 1px #E4E0E6;
+  }
+
+/* Experience */
+
+table {
+    margin: auto;
+    text-align: center;
+}
+
+td, th {
+    color: #E4E0E6;
+}
+
 /* Contact */
 
 #contact {
-    padding-bottom: 110px;
+    padding-bottom: 200px;
 }
 
 #contact p {
@@ -97,6 +137,9 @@ footer {
     bottom: 0;
     width: 100%;
     z-index: 2;
+    font-family: Raleway, sans-serif;
+    color: #E4E0E6;
+    text-shadow: 3px 3px 7px #604567;
 }
 
 /* Media Queries */
