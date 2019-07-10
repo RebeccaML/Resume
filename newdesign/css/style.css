@@ -62,10 +62,16 @@ a {
     color: #E4E0E6;
 }
 
+a:hover {
+    color: #F8F7F9;
+}
+
 h2 {
     padding-top: 150px;
+    padding-bottom: 20px;
     text-align: center;
 }
+
 
 /* Navigation */
 
