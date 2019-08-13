@@ -1,0 +1,103 @@
+/* Main style for resume site
+ * Colors: 
+ */
+
+ /* Base */
+
+html, body {
+    font-size: 18px;
+    height: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-fluid {
+    flex: 1 0 auto;
+    width: 70%;
+    margin: auto;
+}
+
+h1, h2, h3, h4 {
+    font-family: Raleway, sans-serif;
+}
+
+h2 {
+    padding-top: 75px;
+}
+
+
+/* Navigation */
+
+nav {
+    background-color: #FFF;
+}
+
+.nav-link {
+    border-bottom: 2px solid purple;
+    font-weight: bold;
+    color: purple;
+}
+
+/* Skills */
+
+.view-more {
+    background-image: linear-gradient(#AFA2B3, #95839A);
+    font-family: Raleway, sans-serif;
+    color: #2B0734;
+    font-weight: bold;
+}
+
+.view-more:hover {
+    background-image: linear-gradient(#CAC1CC, #AFA2B3);
+    color: #2B0734;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus{
+    box-shadow: 0px 0px 3px 1px #E4E0E6;
+  }
+
+/* Experience */
+
+table {
+    margin: auto;
+    text-align: center;
+}
+
+/* Contact */
+
+#contact {
+    padding-bottom: 100px;
+}
+
+#contact p {
+    margin-top: 20px;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+#contact a {
+    padding: 20px;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    flex-shrink: 0;
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+    color: purple;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1100px) {
+
+}
